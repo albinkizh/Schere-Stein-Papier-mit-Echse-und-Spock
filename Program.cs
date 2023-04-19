@@ -1,12 +1,12 @@
 ﻿int Spielergewinnanzahl = 0;
 int Martinggewinnanzahl = 0;
-
+int Runden = 0;
 
 
 
 do
 {
-    //Hier wird eine Random Zahl ausgewählt und dann unten verwendet
+
     var bans = new List<string> { "Schere", "Stein", "Papier", "Spock", "Echse" };
     int index = Random.Shared.Next(bans.Count);
 
@@ -21,9 +21,29 @@ do
 
         Console.WriteLine("---------------------------------------");
         Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
+        Runden++;
         Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
+        Console.WriteLine("Runde: " + Runden);
         Console.WriteLine("---------------------------------------");
-        Console.WriteLine("Dayyyyummm \nZeig Ihm das du besser bist! Nochmal? (Ja/Nein)");
+
+        if (Spielergewinnanzahl == 3 && Martinggewinnanzahl == 3)
+        {
+            Console.WriteLine("Es ist ein Unentschieden GG Rundenanzahl: " + Runden);
+            Console.WriteLine("Neues Spiel? (Ja/Nein)");
+        }
+        else if (Spielergewinnanzahl == 3)
+        {
+            Console.WriteLine("Du hast gewonnen!!!!! Rundenanzahl: " + Runden);
+            break;
+        }
+        else if (Martinggewinnanzahl == 3)
+        {
+            Console.WriteLine("Martin hat gewonnen!!! Rundenanzahl: " + Runden);
+            break;
+        }
+
+
+        Console.WriteLine("Dayyyyummm \nNächste Runde? (Ja/Nein)");
 
         string qans = Console.ReadLine();
 
@@ -45,9 +65,29 @@ do
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
             Martinggewinnanzahl++;
+            Runden++;   
             Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
+            Console.WriteLine("Runde: " + Runden);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Skill issue... \nGib nicht auf! Versuch nochmal (Ja/Nein)");
+
+            if (Spielergewinnanzahl == 3 && Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Es ist ein Unentschieden GG Rundenanzahl: " + Runden);
+                Console.WriteLine("Neues Spiel? (Ja/Nein)");
+            }
+            else if (Spielergewinnanzahl == 3)
+            {
+                Console.WriteLine("Du hast gewonnen!!!!! Rundenanzahl: " + Runden);
+                break;
+            }
+            else if (Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Martin hat gewonnen!!! Rundenanzahl: " + Runden);
+                break;
+            }
+
+
+            Console.WriteLine("Skill issue... \nNächste Runde? (Ja/Nein)");
 
 
             string qans = Console.ReadLine();
@@ -68,9 +108,29 @@ do
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
             Spielergewinnanzahl++;
+            Runden++;
             Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
+            Console.WriteLine("Runde: " + Runden);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
+
+            if (Spielergewinnanzahl == 3 && Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Es ist ein Unentschieden GG Rundenanzahl: " + Runden);
+                Console.WriteLine("Neues Spiel? (Ja/Nein)");
+            }
+            else if (Spielergewinnanzahl == 3)
+            {
+                Console.WriteLine("Du hast gewonnen!!!!! Rundenanzahl: " + Runden);
+                break;
+            }
+            else if (Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Martin hat gewonnen!!! Rundenanzahl: " + Runden);
+                break;
+            }
+
+
+            Console.WriteLine("Gut gemacht! \nNächste Runde? (Ja/Nein)");
 
             string qans = Console.ReadLine();
 
@@ -90,9 +150,29 @@ do
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
             Spielergewinnanzahl++;
+            Runden++;
             Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
+            Console.WriteLine("Runde: " + Runden);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
+
+            if (Spielergewinnanzahl == 3 && Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Es ist ein Unentschieden GG Rundenanzahl: " + Runden);
+                Console.WriteLine("Neues Spiel? (Ja/Nein)");
+            }
+            else if (Spielergewinnanzahl == 3)
+            {
+                Console.WriteLine("Du hast gewonnen!!!!! Rundenanzahl: " + Runden);
+                break;
+            }
+            else if (Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Martin hat gewonnen!!! Rundenanzahl: " + Runden);
+                break;
+            }
+
+
+            Console.WriteLine("Gut gemacht! \nNächste Runde? (Ja/Nein)");
 
             string qans = Console.ReadLine();
 
@@ -112,9 +192,29 @@ do
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
             Martinggewinnanzahl++;
+            Runden++;
             Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
+            Console.WriteLine("Runde: " + Runden);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Skill issue... \nGib nicht auf! Versuch nochmal (Ja/Nein)");
+
+            if (Spielergewinnanzahl == 3 && Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Es ist ein Unentschieden GG Rundenanzahl: " + Runden);
+                Console.WriteLine("Neues Spiel? (Ja/Nein)");
+            }
+            else if (Spielergewinnanzahl == 3)
+            {
+                Console.WriteLine("Du hast gewonnen!!!!! Rundenanzahl: " + Runden);
+                break;
+            }
+            else if (Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Martin hat gewonnen!!! Rundenanzahl: " + Runden);
+                break;
+            }
+
+
+            Console.WriteLine("Skill issue... \nNächste Runde? (Ja/Nein)");
 
             string qans = Console.ReadLine();
 
@@ -138,9 +238,29 @@ do
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
             Spielergewinnanzahl++;
+            Runden++;
             Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
+            Console.WriteLine("Runde: " + Runden);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
+
+            if (Spielergewinnanzahl == 3 && Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Es ist ein Unentschieden GG Rundenanzahl: " + Runden);
+                Console.WriteLine("Neues Spiel? (Ja/Nein)");
+            }
+            else if (Spielergewinnanzahl == 3)
+            {
+                Console.WriteLine("Du hast gewonnen!!!!! Rundenanzahl: " + Runden);
+                break;
+            }
+            else if (Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Martin hat gewonnen!!! Rundenanzahl: " + Runden);
+                break;
+            }
+
+
+            Console.WriteLine("Gut gemacht! \nNächste Runde? (Ja/Nein)");
 
             string qans = Console.ReadLine();
 
@@ -162,10 +282,29 @@ do
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
             Martinggewinnanzahl++;
+            Runden++;
             Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
+            Console.WriteLine("Runde: " + Runden);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Skill issue... \nGib nicht auf! Versuch nochmal (Ja/Nein)");
 
+            if (Spielergewinnanzahl == 3 && Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Es ist ein Unentschieden GG Rundenanzahl: " + Runden);
+                Console.WriteLine("Neues Spiel? (Ja/Nein)");
+            }
+            else if (Spielergewinnanzahl == 3)
+            {
+                Console.WriteLine("Du hast gewonnen!!!!! Rundenanzahl: " + Runden);
+                break;
+            }
+            else if (Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Martin hat gewonnen!!! Rundenanzahl: " + Runden);
+                break;
+            }
+
+
+            Console.WriteLine("Skill issue... \nNächste Runde? (Ja/Nein)");
             string qans = Console.ReadLine();
 
             if (qans == "Ja")
@@ -184,9 +323,29 @@ do
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
             Spielergewinnanzahl++;
+            Runden++;
             Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
+            Console.WriteLine("Runde: " + Runden);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
+
+            if (Spielergewinnanzahl == 3 && Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Es ist ein Unentschieden GG Rundenanzahl: " + Runden);
+                Console.WriteLine("Neues Spiel? (Ja/Nein)");
+            }
+            else if (Spielergewinnanzahl == 3)
+            {
+                Console.WriteLine("Du hast gewonnen!!!!! Rundenanzahl: " + Runden);
+                break;
+            }
+            else if (Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Martin hat gewonnen!!! Rundenanzahl: " + Runden);
+                break;
+            }
+
+
+            Console.WriteLine("Gut gemacht! \nNächste Runde? (Ja/Nein)");
 
             string qans = Console.ReadLine();
 
@@ -206,9 +365,29 @@ do
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
             Martinggewinnanzahl++;
+            Runden++;
             Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
+            Console.WriteLine("Runde: " + Runden);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Skill issue... \nGib nicht auf! Versuch nochmal (Ja/Nein)");
+
+            if (Spielergewinnanzahl == 3 && Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Es ist ein Unentschieden GG Rundenanzahl: " + Runden);
+                Console.WriteLine("Neues Spiel? (Ja/Nein)");
+            }
+            else if (Spielergewinnanzahl == 3)
+            {
+                Console.WriteLine("Du hast gewonnen!!!!! Rundenanzahl: " + Runden);
+                break;
+            }
+            else if (Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Martin hat gewonnen!!! Rundenanzahl: " + Runden);
+                break;
+            }
+
+
+            Console.WriteLine("Skill issue... \nNächste Runde? (Ja/Nein)");
 
             string qans = Console.ReadLine();
 
@@ -231,9 +410,29 @@ do
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
             Martinggewinnanzahl++;
+            Runden++;
             Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
+            Console.WriteLine("Runde: " + Runden);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Skill issue... \nGib nicht auf! Versuch nochmal (Ja/Nein)");
+
+            if (Spielergewinnanzahl == 3 && Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Es ist ein Unentschieden GG Rundenanzahl: " + Runden);
+                Console.WriteLine("Neues Spiel? (Ja/Nein)");
+            }
+            else if (Spielergewinnanzahl == 3)
+            {
+                Console.WriteLine("Du hast gewonnen!!!!! Rundenanzahl: " + Runden);
+                break;
+            }
+            else if (Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Martin hat gewonnen!!! Rundenanzahl: " + Runden);
+                break;
+            }
+
+
+            Console.WriteLine("Skill issue... \nNächste Runde? (Ja/Nein)");
 
             string qans = Console.ReadLine();
 
@@ -255,9 +454,29 @@ do
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
             Martinggewinnanzahl++;
+            Runden++;
             Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
+            Console.WriteLine("Runde: " + Runden);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Skill issue... \nGib nicht auf! Versuch nochmal (Ja/Nein)");
+
+            if (Spielergewinnanzahl == 3 && Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Es ist ein Unentschieden GG Rundenanzahl: " + Runden);
+                Console.WriteLine("Neues Spiel? (Ja/Nein)");
+            }
+            else if (Spielergewinnanzahl == 3)
+            {
+                Console.WriteLine("Du hast gewonnen!!!!! Rundenanzahl: " + Runden);
+                break;
+            }
+            else if (Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Martin hat gewonnen!!! Rundenanzahl: " + Runden);
+                break;
+            }
+
+
+            Console.WriteLine("Skill issue... \nNächste Runde? (Ja/Nein)");
 
             string qans = Console.ReadLine();
 
@@ -278,9 +497,29 @@ do
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
             Spielergewinnanzahl++;
+            Runden++;
             Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
+            Console.WriteLine("Runde: " + Runden);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
+
+            if (Spielergewinnanzahl == 3 && Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Es ist ein Unentschieden GG Rundenanzahl: " + Runden);
+                Console.WriteLine("Neues Spiel? (Ja/Nein)");
+            }
+            else if (Spielergewinnanzahl == 3)
+            {
+                Console.WriteLine("Du hast gewonnen!!!!! Rundenanzahl: " + Runden);
+                break;
+            }
+            else if (Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Martin hat gewonnen!!! Rundenanzahl: " + Runden);
+                break;
+            }
+
+
+            Console.WriteLine("Gut gemacht! \nNächste Runde? (Ja/Nein)");
 
             string qans = Console.ReadLine();
 
@@ -300,9 +539,28 @@ do
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
             Spielergewinnanzahl++;
+            Runden++;
             Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
+            Console.WriteLine("Runde: " + Runden);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
+
+            if (Spielergewinnanzahl == 3 && Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Es ist ein Unentschieden GG Rundenanzahl: " + Runden);
+                Console.WriteLine("Neues Spiel? (Ja/Nein)");
+            }
+            else if (Spielergewinnanzahl == 3)
+            {
+                Console.WriteLine("Du hast gewonnen!!!!! Rundenanzahl: " + Runden);
+                break;
+            }
+            else if (Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Martin hat gewonnen!!! Rundenanzahl: " + Runden);
+                break;
+            }
+
+            Console.WriteLine("Gut gemacht! \nNächste Runde? (Ja/Nein)");
 
             string qans = Console.ReadLine();
 
@@ -325,9 +583,29 @@ do
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
             Spielergewinnanzahl++;
+            Runden++;
             Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
+            Console.WriteLine("Runde: " + Runden);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
+
+            if (Spielergewinnanzahl == 3 && Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Es ist ein Unentschieden GG Rundenanzahl: " + Runden);
+                Console.WriteLine("Neues Spiel? (Ja/Nein)");
+            }
+            else if (Spielergewinnanzahl == 3)
+            {
+                Console.WriteLine("Du hast gewonnen!!!!! Rundenanzahl: " + Runden);
+                break;
+            }
+            else if (Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Martin hat gewonnen!!! Rundenanzahl: " + Runden);
+                break;
+            }
+
+
+            Console.WriteLine("Gut gemacht! \nNächste Runde? (Ja/Nein)");
 
             string qans = Console.ReadLine();
 
@@ -349,9 +627,29 @@ do
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
             Spielergewinnanzahl++;
+            Runden++;
             Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
+            Console.WriteLine("Runde: " + Runden);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
+
+            if (Spielergewinnanzahl == 3 && Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Es ist ein Unentschieden GG Rundenanzahl: " + Runden);
+                Console.WriteLine("Neues Spiel? (Ja/Nein)");
+            }
+            else if (Spielergewinnanzahl == 3)
+            {
+                Console.WriteLine("Du hast gewonnen!!!!! Rundenanzahl: " + Runden);
+                break;
+            }
+            else if (Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Martin hat gewonnen!!! Rundenanzahl: " + Runden);
+                break;
+            }
+
+
+            Console.WriteLine("Gut gemacht! \nNächste Runde? (Ja/Nein)");
 
 
             string qans = Console.ReadLine();
@@ -373,9 +671,29 @@ do
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
             Martinggewinnanzahl++;
+            Runden++;
             Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
+            Console.WriteLine("Runde: " + Runden);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
+
+            if (Spielergewinnanzahl == 3 && Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Es ist ein Unentschieden GG Rundenanzahl: " + Runden);
+                Console.WriteLine("Neues Spiel? (Ja/Nein)");
+            }
+            else if (Spielergewinnanzahl == 3)
+            {
+                Console.WriteLine("Du hast gewonnen!!!!! Rundenanzahl: " + Runden);
+                break;
+            }
+            else if (Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Martin hat gewonnen!!! Rundenanzahl: " + Runden);
+                break;
+            }
+
+
+            Console.WriteLine("Ahhh Schade! \nNächste Runde? (Ja/Nein)");
 
             string qans = Console.ReadLine();
 
@@ -395,9 +713,29 @@ do
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
             Spielergewinnanzahl++;
+            Runden++;
             Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
+            Console.WriteLine("Runde: " + Runden);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
+
+            if (Spielergewinnanzahl == 3 && Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Es ist ein Unentschieden GG Rundenanzahl: " + Runden);
+                Console.WriteLine("Neues Spiel? (Ja/Nein)");
+            }
+            else if (Spielergewinnanzahl == 3)
+            {
+                Console.WriteLine("Du hast gewonnen!!!!! Rundenanzahl: " + Runden);
+                break;
+            }
+            else if (Martinggewinnanzahl == 3)
+            {
+                Console.WriteLine("Martin hat gewonnen!!! Rundenanzahl: " + Runden);
+                break;
+            }
+
+
+            Console.WriteLine("Ahhh Schade! \nNächste Runde? (Ja/Nein)");
 
             string qans = Console.ReadLine();
 
@@ -412,6 +750,5 @@ do
         }
 
     }
-
 
 } while (true);
