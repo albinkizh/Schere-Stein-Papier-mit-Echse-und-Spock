@@ -1,4 +1,10 @@
-﻿do
+﻿int Spielergewinnanzahl = 0;
+int Martinggewinnanzahl = 0;
+
+
+
+
+do
 {
     //Hier wird eine Random Zahl ausgewählt und dann unten verwendet
     var bans = new List<string> { "Schere", "Stein", "Papier", "Spock", "Echse" };
@@ -15,6 +21,7 @@
 
         Console.WriteLine("---------------------------------------");
         Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
+        Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
         Console.WriteLine("---------------------------------------");
         Console.WriteLine("Dayyyyummm \nZeig Ihm das du besser bist! Nochmal? (Ja/Nein)");
 
@@ -37,8 +44,11 @@
 
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
+            Martinggewinnanzahl++;
+            Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Skill issue... \nGib nicht auf! Versuch nochmal (Ja/Nein)");
+
 
             string qans = Console.ReadLine();
 
@@ -57,6 +67,8 @@
 
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
+            Spielergewinnanzahl++;
+            Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
 
@@ -77,6 +89,8 @@
 
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
+            Spielergewinnanzahl++;
+            Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
 
@@ -97,6 +111,8 @@
 
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
+            Martinggewinnanzahl++;
+            Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Skill issue... \nGib nicht auf! Versuch nochmal (Ja/Nein)");
 
@@ -121,6 +137,8 @@
 
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
+            Spielergewinnanzahl++;
+            Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
 
@@ -143,6 +161,8 @@
 
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
+            Martinggewinnanzahl++;
+            Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Skill issue... \nGib nicht auf! Versuch nochmal (Ja/Nein)");
 
@@ -163,6 +183,8 @@
 
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
+            Spielergewinnanzahl++;
+            Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
 
@@ -183,6 +205,8 @@
 
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
+            Martinggewinnanzahl++;
+            Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Skill issue... \nGib nicht auf! Versuch nochmal (Ja/Nein)");
 
@@ -206,6 +230,8 @@
 
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
+            Martinggewinnanzahl++;
+            Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Skill issue... \nGib nicht auf! Versuch nochmal (Ja/Nein)");
 
@@ -228,6 +254,8 @@
 
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
+            Martinggewinnanzahl++;
+            Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Skill issue... \nGib nicht auf! Versuch nochmal (Ja/Nein)");
 
@@ -249,6 +277,8 @@
 
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
+            Spielergewinnanzahl++;
+            Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
 
@@ -269,6 +299,8 @@
 
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
+            Spielergewinnanzahl++;
+            Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
 
@@ -292,6 +324,8 @@
 
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
+            Spielergewinnanzahl++;
+            Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
 
@@ -314,8 +348,11 @@
 
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
+            Spielergewinnanzahl++;
+            Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
+
 
             string qans = Console.ReadLine();
 
@@ -335,6 +372,8 @@
 
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
+            Martinggewinnanzahl++;
+            Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
 
@@ -355,6 +394,8 @@
 
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Die Auswahl von Martin war: " + bans[index]);
+            Spielergewinnanzahl++;
+            Console.WriteLine("Siegesanzahl: DU(" + Spielergewinnanzahl + ")  MARTIN(" + Martinggewinnanzahl + ")");
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Gut gemacht! \nLust Martin nochmal zu besiegen? (Ja/Nein)");
 
@@ -371,4 +412,6 @@
         }
 
     }
+
+
 } while (true);
