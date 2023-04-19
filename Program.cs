@@ -12,7 +12,7 @@ do
 
 
 
-    Console.WriteLine("Willkommen zum Schere-Stein-Papier mit Echse und Spock Spiel \nKannst du Martin besiegen? \nWähle eines der Fünf aus");
+    Console.WriteLine("Willkommen zum Schere-Stein-Papier mit Echse und Spock Spiel \nKannst du Martin besiegen? \nWas ist dein Wahl? (Schere, Stein, Papier, Echse, Spock)");
     string ans = Console.ReadLine();
 
     if (ans == bans[index]) //Hier du kekkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
@@ -49,6 +49,7 @@ do
 
         if (qans == "Ja")
         {
+            Console.Clear();
             continue;
         }
         else
@@ -94,6 +95,7 @@ do
 
             if (qans == "Ja")
             {
+                Console.Clear();
                 continue;
             }
             else
@@ -136,6 +138,7 @@ do
 
             if (qans == "Ja")
             {
+                Console.Clear();
                 continue;
             }
             else
@@ -178,6 +181,7 @@ do
 
             if (qans == "Ja")
             {
+                Console.Clear();
                 continue;
             }
             else
@@ -220,6 +224,7 @@ do
 
             if (qans == "Ja")
             {
+                Console.Clear();
                 continue;
             }
             else
@@ -266,6 +271,7 @@ do
 
             if (qans == "Ja")
             {
+                Console.Clear();
                 continue;
             }
             else
@@ -309,6 +315,7 @@ do
 
             if (qans == "Ja")
             {
+                Console.Clear();
                 continue;
             }
             else
@@ -351,6 +358,7 @@ do
 
             if (qans == "Ja")
             {
+                Console.Clear();
                 continue;
             }
             else
@@ -393,6 +401,7 @@ do
 
             if (qans == "Ja")
             {
+                Console.Clear();
                 continue;
             }
             else
@@ -438,6 +447,7 @@ do
 
             if (qans == "Ja")
             {
+                Console.Clear();
                 continue;
             }
             else
@@ -482,6 +492,7 @@ do
 
             if (qans == "Ja")
             {
+                Console.Clear();
                 continue;
             }
             else
@@ -525,6 +536,7 @@ do
 
             if (qans == "Ja")
             {
+                Console.Clear();
                 continue;
             }
             else
@@ -566,6 +578,7 @@ do
 
             if (qans == "Ja")
             {
+                Console.Clear();
                 continue;
             }
             else
@@ -611,6 +624,7 @@ do
 
             if (qans == "Ja")
             {
+                Console.Clear();
                 continue;
             }
             else
@@ -656,6 +670,7 @@ do
 
             if (qans == "Ja")
             {
+                Console.Clear();
                 continue;
             }
             else
@@ -699,6 +714,7 @@ do
 
             if (qans == "Ja")
             {
+                Console.Clear();
                 continue;
             }
             else
@@ -741,6 +757,7 @@ do
 
             if (qans == "Ja")
             {
+                Console.Clear();
                 continue;
             }
             else
