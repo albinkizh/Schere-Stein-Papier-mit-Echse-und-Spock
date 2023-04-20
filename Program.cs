@@ -765,7 +765,11 @@ do
                 break;
             }
         }
-
+        else
+        {
+            Console.WriteLine("Oh etwas ist schiefgelaufen! Versuchs Nochmal");
+            continue;
+        }
     }
 
 } while (true);
